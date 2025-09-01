@@ -21,11 +21,11 @@ src/
    │ └── BotaoQuartov2.tsx
    ├── pages/
    │ ├── mobile/
-   │ | ├─ Ajuda.atx
-   │ | ├─ Cadastro.atx
-   │ | ├─ Login.atx
-   │ | ├─ Home.atx
-   │ | └─ Perfil.atx
+   │ | ├─ Ajuda.tsx
+   │ | ├─ Cadastro.tsx
+   │ | ├─ Login.tsx
+   │ | ├─ Home.tsx
+   │ | └─ Perfil.tsx
    │ ├── Home.tsx
    │ ├── Biometria.tsx
    │ ├── Cadastro.tsx
