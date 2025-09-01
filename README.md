@@ -1,6 +1,6 @@
 ## ️Páginas com React + Vite + Tailwind CSS
 
-⬆️ V0.4 ⬆️
+⬆️ V0.5 ⬆️
 
 _Repositório dedicado ao desenvolvimento das telas do sistema, contendo exclusivamente a implementação da interface do usuário (UI). Este espaço concentra os layouts, componentes visuais e fluxos de navegação, servindo como base para validação do design para integração futura_
 
@@ -20,6 +20,12 @@ src/
    │ └── BotaoQuarto.tsx
    │ └── BotaoQuartov2.tsx
    ├── pages/
+   │ ├── mobile/
+   │ | ├─ Ajuda.atx
+   │ | ├─ Cadastro.atx
+   │ | ├─ Login.atx
+   │ | ├─ Home.atx
+   │ | └─ Perfil.atx
    │ ├── Home.tsx
    │ ├── Biometria.tsx
    │ ├── Cadastro.tsx
@@ -31,9 +37,12 @@ src/
    └── index.tsx
    public/
    └── CSS/ imagens/...
+        └─/ imagens_mob/...
 ```
 
 ## Funcionalidades
+- UI Fluxo Totem
+- UI Fluxo App Mobile
 
 ## Funcionalidades
 - Layout adaptativo apenas para desktop full

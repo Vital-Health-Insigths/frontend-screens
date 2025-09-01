@@ -7,7 +7,7 @@ export default function CardNavegacao({ setPagina }: CardNavegacaoProps) {
     <div className="fixed bottom-10 right-10 z-50 group">
         <div className="bg-white rounded-2xl shadow-lg p-4 border-2 border-[#0a6fa1] 
                         w-[180px] overflow-hidden transition-all duration-400 
-                        max-h-15 opacity-30 group-hover:max-h-[600px] flex flex-col gap-3 group-hover:opacity-100">
+                        max-h-15 opacity-30 group-hover:max-h-[1200px] flex flex-col gap-3 group-hover:opacity-100">
         
             <h3 className="text-[18px] font-bold text-[#0a6fa1] text-center">
             Navegação
@@ -70,6 +70,41 @@ export default function CardNavegacao({ setPagina }: CardNavegacaoProps) {
             Check-Out
             </button>
 
+            <h3 className="text-[18px] font-bold text-[#880bae] text-center">
+            Mobile
+            </h3>
+
+
+            <button
+              onClick={() => setPagina("Home_mob")}
+              className="px-4 py-2 bg-[#eee0fa] hover:bg-[#deb2f2] rounded-lg text-black font-medium text-sm"
+            >
+            Home
+            </button>
+            <button
+              onClick={() => setPagina("Cadastro_mob")}
+              className="px-4 py-2 bg-[#eee0fa] hover:bg-[#deb2f2] rounded-lg text-black font-medium text-sm"
+            >
+            Cadastro
+            </button>
+            <button
+              onClick={() => setPagina("Login_mob")}
+              className="px-4 py-2 bg-[#eee0fa] hover:bg-[#deb2f2] rounded-lg text-black font-medium text-sm"
+            >
+            Login
+            </button>
+            <button
+              onClick={() => setPagina("Perfil_mob")}
+              className="px-4 py-2 bg-[#eee0fa] hover:bg-[#deb2f2] rounded-lg text-black font-medium text-sm"
+            >
+            Perfil
+            </button>
+            <button
+              onClick={() => setPagina("Ajuda_mob")}
+              className="px-4 py-2 bg-[#eee0fa] hover:bg-[#deb2f2] rounded-lg text-black font-medium text-sm"
+            >
+            Ajuda
+            </button>
           </div>
         </div>
     </div>
