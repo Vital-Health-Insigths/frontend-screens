@@ -27,7 +27,7 @@ export default function App() {
         className="absolute w-[675px] h-[669px] blur-[3px] right-[100%] top-1/2 -translate-y-1/2 -z-10 pointer-events-none"
       />
       <img
-        src="/CSS/imagens/imagens-mob/img-mid.jpg"
+        src="/CSS/imagens/imagens/img-mid.jpg"
         className="absolute w-[726px] h-[669px] blur-[3px] top-1/2 -translate-y-1/2  -z-20 pointer-events-none"
       />
       <img
