@@ -1,5 +1,5 @@
-import { useState } from "react";
 import BotaoQuartov2 from "../components/BotaoQuartov2";
+import { useState } from "react";
 
 export default function Quartos_v2({ setPagina }: { setPagina: (pagina: string) => void }) {
     const [quartoSelecionado, setQuartoSelecionado] = useState<string | null>(null);
@@ -31,7 +31,6 @@ export default function Quartos_v2({ setPagina }: { setPagina: (pagina: string) 
                 VOLTAR
                 </button>
             </div>
-
 
             <div className="absolute flex flex-col items-center justify-center inset-0 gap-6 bottom-[636px] z-10 pointer-events-none">
                 <h2 className="text-3xl font-semibold text-center text-black">

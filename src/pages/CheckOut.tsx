@@ -52,6 +52,8 @@ export default function Check_Out({ setPagina }: Props) {
                 Ajuda
                 </button>
             </div>
+
+            
         </div>
     </div>
   );

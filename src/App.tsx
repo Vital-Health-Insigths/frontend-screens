@@ -9,34 +9,43 @@ import Quartos from './pages/Quartos';
 import Check_Out from './pages/CheckOut';
 import Case from './pages/Case';
 import Quartos_v2 from './pages/Quartos_v2';
+
+import Home_mob from './pages/Mobile/Home_mob';
+import Cadastro_mob from './pages/Mobile/Cadastro_mob';
+import Ajuda_mob from './pages/Mobile/Ajuda_mob';
+import Login_mob from './pages/Mobile/Login_mob';
+import Perfil_mob from './pages/Mobile/Perfil_mob';
+
+import Base_admin from './pages/Admin/Base_admin';
+import Home_admin from './pages/Admin/Home_admin';
+import Quarto_admin from './pages/Admin/Quarto_admin';
+import Usuario_admin from './pages/Admin/Usuario_admin';
+import Busca_usuario_admin from './pages/Admin/Busca_usuario_admin'
+import Busca_quarto_admin from './pages/Admin/Busca_quarto_admin'
+
 import CardNavegacao from './components/CardNavegacao';
 
-
-
 export default function App() {
-  const [pagina, setPagina] = useState("Home");
-
+  const [pagina, setPagina] = useState("Home_mob");
   return (
-    <div className="relative bg-fundo min-h-screen">
+    <div className="relative bg-fundo">
       <img
         src="/CSS/imagens/imagens/img-left.jpg"
         className="absolute w-[675px] h-[669px] blur-[3px] right-[100%] top-1/2 -translate-y-1/2 -z-10 pointer-events-none"
       />
       <img
+        src="/CSS/imagens/imagens/img-mid.jpg"
+        className="absolute w-[726px] h-[669px] blur-[3px] top-1/2 -translate-y-1/2  -z-20 pointer-events-none"
+      />
+      <img
         src="/CSS/imagens/imagens/img-rigth.jpg"
         className="absolute w-[675px] h-[669px] blur-[3px] top-1/2 -translate-y-1/2 left-[100%] -z-10 pointer-events-none"
       />
-    {/*     
-      <img
-        src="/CSS/imagens/elementos/Logo_Azul.png"
-        className="absolute scale-15 right-200 top-144 object-fill opacity-90 blur-[3px] z-50"
-      />
-      */}
-
       <div>
+        
       <CardNavegacao setPagina={setPagina} />
-      </div> 
-
+      
+      </div>
       {pagina === "Home" && <Home setPagina={setPagina} />}
       {pagina === "Biometria" && <Biometria setPagina={setPagina} />}
       {pagina === "Cadastro" && <Cadastro setPagina={setPagina} />}
@@ -46,6 +55,18 @@ export default function App() {
       {pagina === "Quartos_v2" && <Quartos_v2 setPagina={setPagina} />}
       {pagina === "Check_Out" && <Check_Out setPagina={setPagina} />}
 
+      {pagina === "Home_mob" && <Home_mob setPagina={setPagina} />}
+      {pagina === "Cadastro_mob" && <Cadastro_mob setPagina={setPagina} />}
+      {pagina === "Ajuda_mob" && <Ajuda_mob setPagina={setPagina} />}
+      {pagina === "Login_mob" && <Login_mob setPagina={setPagina} />}
+      {pagina === "Perfil_mob" && <Perfil_mob setPagina={setPagina} />}
+
+      {pagina === "Base_admin" && <Base_admin setPagina={setPagina} />}
+      {pagina === "Home_admin" && <Home_admin setPagina={setPagina} />}
+      {pagina === "Quarto_admin" && <Quarto_admin setPagina={setPagina}/>}
+      {pagina === "Usuario_admin" && <Usuario_admin setPagina={setPagina}/>}
+      {pagina === "Busca_usuario_admin" && <Busca_usuario_admin setPagina={setPagina}/>}
+      {pagina === "Busca_quarto_admin" && <Busca_quarto_admin setPagina={setPagina}/>}
     </div>
-  );
-}
+    );
+  }
